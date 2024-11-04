@@ -27,14 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="light">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} flex min-h-dvh flex-col antialiased ~xs/2xl:~gap-6/20`}
-      >
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+      <body className={`${geistSans.variable} ${geistMono.variable} min-h-dvh antialiased`}>
+        <div className="flex grow flex-col ~xs/2xl:~gap-6/20">
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+          </Providers>
+        </div>
       </body>
     </html>
   );
