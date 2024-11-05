@@ -27,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="light">
-      <body className={`${geistSans.variable} ${geistMono.variable} min-h-dvh antialiased`}>
-        <div className="flex grow flex-col ~xs/2xl:~gap-6/20">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex grow flex-col min-h-dvh ~xs/2xl:~gap-6/20">
           <Providers>
             <Header />
             {children}

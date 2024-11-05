@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 import type { Obj } from "@velmoo/types";
 
-import fluid, { extract } from "fluid-tailwind";
+import fluid from "fluid-tailwind";
 import myPlugins from "./plugins";
 import { generateValues, pxToRem } from "./utils";
 import { isArr } from "@velmoo/utils/web";
